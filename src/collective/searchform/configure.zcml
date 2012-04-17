@@ -3,18 +3,10 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.searchform">
 
-  <five:registerPackage package="." initialize=".initialize" />
+  <five:registerPackage package="." />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="collective.searchform"
-      directory="profiles/default"
-      description="Installs the collective.searchform package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
   <!-- -*- extra stuff goes here -*- -->
   <adapter factory=".search.SearchControlPanelAdapter" />
 
